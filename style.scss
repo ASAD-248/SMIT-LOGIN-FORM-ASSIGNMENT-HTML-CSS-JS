@@ -1,0 +1,238 @@
+
+
+
+@font-face {
+    font-family: prim;
+    src: url(./assests/Signika/Signika-VariableFont_GRAD\,wght.ttf)
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        height: 100%;
+        width: 75%;
+        margin-top: 1%;
+       
+    }
+
+    .headContent_wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            
+            // width: max-content;
+            display: flex;
+            // flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            img{
+                width: 75%;
+                // background: red;
+            }
+        }
+
+        .row{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            padding: 8px 0px;
+            width: 100%;
+          
+
+            span{
+                font-family: prim;
+                letter-spacing: 1px;
+                color: rgb(105, 105, 105);
+            }
+            .column{
+                display: flex;
+                    gap: 1.5rem;            
+                    width: 100%;
+                    height: 70px;;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    h2{
+                        font-family: prim;
+                        font-size: 2.4rem;
+                        font-weight: 600;              
+                    }
+
+                .link{
+                    font-size: 10px;
+                    overflow: hidden;
+                    img{
+                        height: 40px;
+                        width: 40px;
+                    }              
+                }
+
+                .stdnt_btn{
+                    padding: 13px 25px;
+                    border-radius: 50px;
+                    border: 1px solid #0d6db7;
+
+                    .fa-user-graduate{
+                        font-size: 20px;
+                        color: #0d6db7;
+                    }
+                    span{
+                        color: #0d6db7;
+                        font-size: 20px;
+                    }        
+                }
+            }
+
+            .text_wrap{
+                width: max-content;         
+                
+                display: flex;
+                align-items: center;
+                justify-content: space-around;           
+                gap: 1rem;
+
+                .links_col{
+                    padding: 10px 20px;
+
+                    span{
+                        a{
+                            color:#0d6db7 ;
+                            text-decoration: none;
+                            font-size: 17px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .input_container{
+       
+        width: 100%;
+
+        .input_form{
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            .imp_row{
+                display: grid;
+                grid-template-columns: 50% 50% ;
+                // padding: 10px 10px;
+                background-color: rgb(201, 201, 201);
+                // gap: 1rem;
+                // border: 1px solid black;
+
+               
+
+                .inpu_div{
+                    display: flex;
+                    flex-direction: column;
+                    // border: 1px solid black;
+                    padding: 10px;
+                    background: white;
+
+                    label{
+                        color: #0d6db7;
+                        font-family: prim;
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                    .input_box{                      
+                        select{
+                            outline: none;
+                            border: 2px solid greenyellow;
+                            padding:  0px 20px 0px 20px ;
+                            background: none;
+                            width: 100%;
+                            height: 75px;
+                            font-size: 18px;
+                            font-family: prim;
+                            color:gray;
+                            border-radius: 4px;
+                            // border-width: 2px solid;
+                        }
+                        select:focus{
+                            outline: none;
+                            border: 2px solid #0d6db7;
+                            // padding:  0px 20px 0px 20px ;
+                            // background: none;
+                            // width: 100%;
+                            // height: 75px;
+                            // font-size: 18px;
+                            // font-family: prim;
+                            // color: black;
+                            // border-radius: 8px;
+                        }
+                       
+                    }
+                    .full_name{
+
+                        outline: none;
+                        border: 2px solid greenyellow;
+                        padding:  0px 20px 0px 20px ;
+                        background: none;
+                        width: 100%;
+                        height: 75px;
+                        font-size: 18px;
+                        font-family: prim;
+                        color: gray;
+                        border-radius: 4px;
+
+                    }
+                    
+                }
+             
+                
+            }
+             .addressBox{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                label{
+                    color: #0d6db7;
+                    font-family: prim;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+              
+                .addres_inp{
+                    outline: none;
+                    border: 2px solid greenyellow;
+                    padding:  0px 20px 0px 20px ;
+                    background: none;
+                    width: 100%;
+                    height: 75px;
+                    font-size: 18px;
+                    font-family: prim;
+                    color: gray;
+                    border-radius: 4px;
+                }
+
+            }
+        }
+    }
+}
