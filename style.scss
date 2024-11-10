@@ -1,0 +1,279 @@
+
+
+
+@font-face {
+    font-family: prim;
+    src: url(./assests/Signika/Signika-VariableFont_GRAD\,wght.ttf)
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    .container{
+        height: 100%;
+        width: 75%;
+        margin-top: 1%;
+    }
+
+    .headContent_wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            
+            // width: max-content;
+            display: flex;
+            // flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            img{
+                width: 65%;
+                // background: red;
+            }
+        }
+
+        .row{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+          
+          
+
+            span{
+                font-family: prim;
+                letter-spacing: 1px;
+                color: rgb(105, 105, 105);
+                font-size: 15px;
+            }
+            .column{
+                display: flex;
+                    gap: 1.5rem;            
+                    width: 100%;
+                    height: 70px;;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    h2{
+                        font-family: prim;
+                        font-size: 2rem;
+                        font-weight: 600;              
+                    }
+
+                .link{
+                    font-size: 10px;
+                    overflow: hidden;
+                    img{
+                        height: 35px;
+                        width: 35px;
+                    }              
+                }
+
+                .stdnt_btn{
+                    padding: 8px 17px;
+                    border-radius: 50px;
+                    border: 1px solid #0d6db7;
+                    background-color: white;
+
+                    .fa-user-graduate{
+                        font-size: 14px;
+                        color: #0d6db7;
+                        margin-right: 5px;
+                    }
+                    span{
+                        color: #0d6db7;
+                        font-size: 16px;
+                        letter-spacing: -0.3px;
+                    
+                    }        
+                }
+            }
+
+            .text_wrap{
+                width: max-content;         
+                
+                display: flex;
+                align-items: center;
+                justify-content: space-around;           
+                gap: 1rem;
+
+                .links_col{
+                    padding: 10px 10px;
+
+                    span{
+                        a{
+                            color:#0d6db7 ;
+                            text-decoration: none;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        .headLast_row{
+            margin-top: 12px;
+        }
+    }
+
+    .input_container{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15%;
+        margin-top: 10px;
+
+
+        .input_form{
+            gap: rem;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            .imp_row{
+                
+                display: grid;
+                grid-template-columns: 50% 50% ;
+                // padding: 10px 10px;
+                background-color: rgb(201, 201, 201);
+                // gap: 1rem;
+                // border: 1px solid black;
+
+               
+
+                .inpu_div{
+                    display: flex;
+                    flex-direction: column;
+                    // border: 1px solid black;
+                    padding: 10px;
+                    background: white;
+
+                    label{
+                        color: #0d6db7;
+                        font-family: prim;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                    .input_box{                      
+                        select{
+                            outline: none;
+                            border: 1px solid rgb(127, 211, 0);
+                            padding:  0px 0px 0px 10px ;
+                            background: none;
+                            width: 100%;
+                            height: 60px;
+                            font-size: 16px;
+                            font-family: prim;
+                            color:rgb(167, 167, 167);
+                            border-radius: 8px;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        select:focus{
+                            outline: none;
+                            border: 1px solid #0d6db7;
+                            // padding:  0px 20px 0px 20px ;
+                            // background: none;
+                            // width: 100%;
+                            // height: 75px;
+                            // font-size: 18px;
+                            // font-family: prim;
+                            // color: black;
+                            // border-radius: 8px;
+                        }
+                       
+                    }
+                    .full_name{
+
+                        outline: none;
+                        border: 1px solid greenyellow;
+                        padding:  0px 0px 0px 10px ;
+                        background: none;
+                        width: 100%;
+                        height: 60px;
+                        font-size: 16px;
+                        font-family: prim;
+                        color:rgb(53, 53, 53);
+                        border-radius: 8px;
+                        transition: all 0.3s ease-in-out;
+
+                    }
+                    :focus{
+                        outline: none;
+                        border: 1px solid #0d6db7;
+                    }
+                    
+                }
+             
+                
+            }
+             .addressBox{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                label{
+                    color: #0d6db7;
+                    font-family: prim;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+
+                .sub_btn{
+                    margin-top: 20px;
+                    height: 45px;
+                    width: 100%;
+                    background-color:  #0d6db7;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+              
+                .addres_inp{
+                    outline: none;
+                    border: 1px solid greenyellow;
+                    padding:  0px 0px 0px 10px ;
+                    background: none;
+                    width: 100%;
+                    height: 60px;
+                    font-size: 16px;
+                    font-family: prim;
+                    color:rgb(0, 0, 0);
+                    border-radius: 8px;
+                    transition: all 0.3s ease-in-out;
+                }
+                :focus{
+                    outline: none;
+                    border: 1px solid #0d6db7;
+                }
+
+            }
+        }
+    }
+}
